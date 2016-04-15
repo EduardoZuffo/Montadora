@@ -21,6 +21,6 @@ $var = function ($nome)
 var_dump($var);
 
 ?>
-
-
+//Linha de teste adicionada
+//Linha de teste adicionada 2x
 </pre>
