@@ -28,6 +28,8 @@ $motort = new MotorTurbo();
 $volante = new volante();
 
 $carro1 = new Carro($motort, $volante);
+$carro2 = new Carro($motort, $volante);
+
 
 
 try
@@ -42,8 +44,17 @@ try
     echo "\n".$e->getMessage()."\n";
 }
 
+$carro3->cor = "Preto";
 
-var_dump($carro1);
+var_dump($carro1, $carro2, $carro3);
+
+if ($carro1 instanceof Countable)
+{
+    echo "São iguais";
+} else 
+{
+    echo "São diferentes";
+}
 
 ?>
 </pre>
